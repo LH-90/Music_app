@@ -1,31 +1,19 @@
 import "./App.css"
 import songs from "./data/songs"
-import useMusicPlayer from "./hooks/useMusicPlayer";
-import SongsList from "./components/SongsList";
+import { MusicPlayerProvider } from "./context/MusicPlayerContext.jsx";
+import SongsList from "./components/SongsList/SongsList.jsx";
 
 
 const App = () => {
-
-  const { currentSong, isPlaying, playSong, playPrevious, playNext } = useMusicPlayer(songs);  
   
   return (
 
-    <div>
-        
-        <h1 className="title">Léa's Playlist</h1>
-     
-        <div>
-          <SongsList 
-           songs={songs} 
-           currentSong={currentSong} 
-           isPlaying={isPlaying} 
-           playSong={playSong} 
-           playPrevious={playPrevious} 
-           playNext={playNext} 
-          />
-        </div>
+    <MusicPlayerProvider songs={songs}>
 
-    </div>
+        <h1>Léa's Playlist</h1>
+        <SongsList songs={songs} />
+
+    </MusicPlayerProvider>
 
   );
 

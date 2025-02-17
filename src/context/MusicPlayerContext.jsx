@@ -1,6 +1,10 @@
-import { useState, useRef } from "react";
+import { useState, useRef, createContext } from "react";
 
-const useMusicPlayer = (songs) => {
+
+const MusicPlayerContext = createContext(null);
+
+
+const MusicPlayerProvider = ({children, songs}) => {
 
   const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -50,8 +54,11 @@ const useMusicPlayer = (songs) => {
   };
 
 
-  return { currentSong, isPlaying, playSong, playPrevious, playNext };
-
+  return (
+    <MusicPlayerContext.Provider value={{ currentSong, isPlaying, playSong, playPrevious, playNext }}>
+      {children}
+    </MusicPlayerContext.Provider>
+  )
 };
 
-export default useMusicPlayer;
+export { MusicPlayerProvider, MusicPlayerContext };

@@ -1,0 +1,39 @@
+.wrapper {
+    position: absolute;
+    left: 0; /* Buttons aligned on the left */
+    top: 70%; /* Buttons down */
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+
+.button {
+
+  background: none;
+  font-size: 1.4rem; 
+  color: rgb(170, 170, 170);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  padding: 0;
+  line-height: 1; /* Icon is centered */
+  border: none;
+
+&:hover,
+&:focus {
+  color: #9a2fb3; 
+  outline: none; 
+}
+
+&:active {
+  color: #9a2fb3; 
+  transform: scale(0.9); /* Press effect */
+}
+
+}
+
