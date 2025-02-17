@@ -26,6 +26,7 @@ const MusicPlayerProvider = ({children, songs}) => {
       setCurrentSong(song); 
       setIsPlaying(true);
       audioRef.current.src = song.previewURL; // Set the new song source
+      audioRef.current.crossOrigin = "anonymous";
       audioRef.current.play(); // Play the new song
       audioRef.current.onended = () => { setIsPlaying(false) }; // When song is finished, update to false
     }
