@@ -1,27 +1,17 @@
 .wrapper {
     position: absolute;
     left: 0; /* Buttons aligned on the left */
-    top: 70%; /* Buttons down */
+    top: 75%; /* Buttons down */
     display: flex;
     gap: 1.25rem;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
+}
 
 .button {
-
   background: none;
-  font-size: 1.4rem; 
+  font-size: 0.7rem; 
   color: rgb(170, 170, 170);
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.2s;
   padding: 0;
-  line-height: 1; /* Icon is centered */
   border: none;
 
 &:hover,
@@ -37,3 +27,6 @@
 
 }
 
+.button span {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
