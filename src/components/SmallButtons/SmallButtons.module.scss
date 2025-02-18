@@ -9,7 +9,7 @@
 .button {
 
   background: none;
-  font-size: 0.7rem; 
+  font-size: 1.4rem; 
   color: rgb(170, 170, 170);
   flex-shrink: 0;
   display: flex;
@@ -30,7 +30,7 @@
 
 &:active {
   color: #9a2fb3; 
-  transform: scale(0.9); /* Press effect */
+  transform: scale(0.8); /* Press effect */
 }
 
 }

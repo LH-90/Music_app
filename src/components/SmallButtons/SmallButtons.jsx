@@ -11,8 +11,8 @@ const SmallButtons = ({ song, index }) => {
         <div>
             {(currentSong?.id === song.id) ? (
                 <div className={styles.wrapper}>
-                    <button className={styles.button} onClick={() => playPrevious(index)}><span>◀◀</span></button>
-                    <button className={styles.button} onClick={() => playNext(index)}><span>▶▶</span></button>
+                    <button className={styles.button} onClick={() => playPrevious(index)}><span>⏴⏴</span></button>
+                    <button className={styles.button} onClick={() => playNext(index)}><span>⏵⏵</span></button>
                 </div>
             ) : null}
         </div>
