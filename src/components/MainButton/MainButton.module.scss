@@ -6,10 +6,16 @@
   color: white;
   background-color: #b53bca;
   font-size: 1rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: background-color 0.4s ease-in-out, transform 0.3s;
   padding: 0;
+  line-height: 1; /* Icon is centered */
   border: none; 
+
 
 
 &:hover,

@@ -10,7 +10,7 @@ const MainButton = ({ song }) => {
     return (
 
         <button className={`${styles.button} ${(currentSong?.id === song.id && isPlaying) ? styles.active : ""}`}  onClick={() => playSong(song)}>
-          {(currentSong?.id === song.id && isPlaying) ? "❚❚" : "\u00A0▶"}
+          {(currentSong?.id === song.id && isPlaying) ? "❚❚" : "⏵"}
         </button>
 
     );

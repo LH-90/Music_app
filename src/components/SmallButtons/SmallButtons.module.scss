@@ -1,18 +1,26 @@
 .wrapper {
-    position: absolute;
-    left: 0; /* Buttons aligned on the left */
-    top: 75%; /* Buttons down */
-    display: flex;
-    gap: 1.25rem;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .button {
+
   background: none;
   font-size: 0.7rem; 
   color: rgb(170, 170, 170);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
   padding: 0;
+  line-height: 1; /* Icon is centered */
   border: none;
+  
 
 &:hover,
 &:focus {
