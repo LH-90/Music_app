@@ -1,5 +1,4 @@
 import SongItem from "../SongItem/SongItem";
-import styles from "./SongsList.module.scss"
 
 
 const SongsList = ({ songs }) => {
