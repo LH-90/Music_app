@@ -5,7 +5,7 @@ const SongsList = ({ songs }) => {
     
     return (
 
-      <div className={styles.wrapper}>
+      <div>
         {songs.map((song, index) => (
           <SongItem 
             key={song.id}
