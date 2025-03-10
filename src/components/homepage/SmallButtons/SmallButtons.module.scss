@@ -1,0 +1,19 @@
+@use "../../../styles/mixins" as mx;
+
+
+.wrapper {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+
+  .smallButton {
+    @include mx.button(1.4rem, rgb(170, 170, 170), transparent, 0.8);
+  
+    span {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    }
+  
+  }
+}

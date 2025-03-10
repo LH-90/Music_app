@@ -1,0 +1,26 @@
+@use "../../../styles/mixins" as mx;
+
+
+.homepageTitle {
+  @include mx.h1Text();
+  
+  & {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    background: var(--h1-background);
+    z-index: 9999;
+    margin: 0;
+    padding: 1rem;
+    top: 0;
+    text-align: center;
+    box-shadow: 0 2px 15px #f4e2f8;
+  }  
+
+  @media (min-width: 768px) {
+    padding: 1.4rem;
+  }
+  
+}

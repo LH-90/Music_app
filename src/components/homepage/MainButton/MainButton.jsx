@@ -1,7 +1,8 @@
 import { useContext } from "react";
-import { MusicPlayerContext } from "../../context/MusicPlayerContext.jsx";
+import { MusicPlayerContext } from "../../../context/MusicPlayerContext.jsx";
 import styles from "./MainButton.module.scss"
 
+const { mainButton, playing } = styles;
 
 const MainButton = ({ song }) => {
 
@@ -9,7 +10,7 @@ const MainButton = ({ song }) => {
 
     return (
 
-        <button className={`${styles.button} ${(currentSong?.id === song.id && isPlaying) ? styles.active : ""}`}  onClick={() => playSong(song)}>
+        <button className={`${mainButton} ${(currentSong?.id === song.id && isPlaying) ? playing : ""}`}  onClick={() => playSong(song)}>
           {(currentSong?.id === song.id && isPlaying) ? <span>❚❚</span> : "⏵"}
         </button>
 

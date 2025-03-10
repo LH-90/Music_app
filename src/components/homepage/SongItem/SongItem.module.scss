@@ -1,4 +1,4 @@
-.wrapper {
+.songItem {
     display: flex;  /* Items appear in a row */
     align-items: center; /* All items are aligned vertically */
     position: relative;
@@ -6,9 +6,9 @@
     gap: 1rem; /* Space between items */
     padding: 0.8rem;
     border-bottom: 0.05rem solid #dad9d9;
+    
+    img {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
   }
-
-img {
-    width: 2.2rem;
-    height: 2.2rem;
-}

@@ -1,0 +1,62 @@
+:root {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5;
+  font-weight: 350;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Default light mode variables */
+  
+  --text-color: #213547;
+  --background-color: white;
+  --h1-background: white;
+  --link-color: #213547;
+  --link-hover: #213547;
+}
+
+/* TO BE FIXED
+Dark mode variables    
+[data-theme="dark"] {
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  --h1-background: #242424;
+  --link-color: rgba(255, 255, 255, 0.87);
+  --link-hover: rgba(255, 255, 255, 0.87);
+}*/
+
+  
+body {
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  cursor: default;
+}
+
+
+a {
+  color: var(--link-color);
+  text-decoration: inherit;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.05rem;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+  }
+
+}
+
+
+
+

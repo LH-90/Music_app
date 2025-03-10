@@ -47,7 +47,7 @@ const songs = [
   },
   {
     id: 6,
-    title: "The Greatest Show on Earth",
+    title: "The Greatest Show On Earth",
     artist: "Nightwish",
     album: "Endless Forms Most Beautiful",
     albumCover:
@@ -90,10 +90,8 @@ const songs = [
       "https://api.deezer.com/album/50537282/image",
     previewURL: "https://github.com/LH-90/Music_app/raw/main/public/Follow%20Your%20Heart.m4a",
   }
-
   
 ];
-
 
 
 export default songs;  

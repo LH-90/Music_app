@@ -1,0 +1,10 @@
+
+.songsList {
+  padding: 4rem 1rem 1rem; // Default padding for mobile
+
+
+  @media (min-width: 768px) { // Tablette and Desktop 
+    padding: 5.5rem 2rem 2rem;
+  }
+}
+
