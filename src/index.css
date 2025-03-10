@@ -43,20 +43,18 @@ a {
   color: var(--link-color);
   text-decoration: inherit;
   display: inline-block;
-
-  &:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 0.05rem;
-    text-underline-offset: 0.05rem;
-  }
-
-  &:active {
-    transform: scale(0.95);
-    transition: transform 0.2s ease-in-out;
-  }
-
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.05rem;
+  text-underline-offset: 0.05rem;
+}
+
+a:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
+}
 
 
 
