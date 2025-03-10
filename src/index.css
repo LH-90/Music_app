@@ -46,7 +46,11 @@ a {
   text-underline-offset: 0.05rem;
   display: inline-block;
   -webkit-tap-highlight-color: transparent;
+}
 
+a:active {
+  transform: scale(0.95);
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (min-width: 1024px) {
@@ -56,10 +60,9 @@ a {
   }
   a:hover {
     text-decoration: underline;
-  }
-  a:active {
-    transform: scale(0.95);
-    transition: transform 0.3s ease-in-out;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.05rem;
+    display: inline-block;
   }
   
 }
