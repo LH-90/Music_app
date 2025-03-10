@@ -45,6 +45,7 @@ a {
   text-decoration-thickness: 0.05rem;
   text-underline-offset: 0.05rem;
   display: inline-block;
+  -webkit-tap-highlight-color: transparent;
 
 }
 
