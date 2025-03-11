@@ -21,6 +21,7 @@
     padding: 0;
     line-height: 1; /* Icon is centered */
     border: none; 
+    -webkit-tap-highlight-color: transparent;
   
   &:hover,
   &:focus {  
